@@ -40,7 +40,7 @@ class ImageHelper
             case 'EPS':
                 return 'application/postscript';
             default:
-                return throw new InvalidArgumentException(
+                throw new InvalidArgumentException(
                     sprintf(
                         'Image format %s is not supported',
                         $format
