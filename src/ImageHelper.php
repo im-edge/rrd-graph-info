@@ -77,4 +77,29 @@ class ImageHelper
             '%23', // urlencode('#'),
         ], $svg);
     }
+
+
+    /**
+     * Reverse operation for prepareSvgDataString()
+     */
+    public static function decodeSvgDataString(string $svg): string
+    {
+        return str_replace([
+            '',
+            '',
+            '%27', // urlencode("'"),
+            "'",
+            '%3C', // urlencode('<'),
+            '%3E', // urlencode('>'),
+            '%23', // urlencode('#'),
+        ], [
+            "\r",
+            "\n",
+            "'",
+            '"',
+            '<',
+            '>',
+            '#',
+        ], $svg);
+    }
 }
