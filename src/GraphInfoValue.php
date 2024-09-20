@@ -2,7 +2,7 @@
 
 namespace IMEdge\RrdGraphInfo;
 
-use gipfl\Json\JsonSerialization;
+use IMEdge\Json\JsonSerialization;
 
 class GraphInfoValue implements JsonSerialization
 {

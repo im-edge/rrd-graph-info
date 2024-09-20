@@ -2,7 +2,7 @@
 
 namespace IMEdge\RrdGraphInfo;
 
-use gipfl\Json\JsonSerialization;
+use IMEdge\Json\JsonSerialization;
 use IMEdge\RrdStructure\NumericValue;
 use Psr\Log\LoggerInterface;
 use RuntimeException;

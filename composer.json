@@ -24,7 +24,7 @@
     },
     "require": {
         "php": ">=7.4",
-        "gipfl/json": ">=0.2",
+        "imedge/json": ">=0.1",
         "imedge/rrd-structure": ">=0.2.1",
         "psr/log": "^1.0 || ^3.0"
     },
