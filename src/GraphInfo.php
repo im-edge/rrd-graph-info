@@ -31,7 +31,7 @@ class GraphInfo implements JsonSerialization
 {
     /** @var string[] */
     public array $legend = [];
-    /** @var array<int, string|float|int|null>  */
+    /** @var array<int|string, string|float|int|null> key is 'string' after print label replacement */
     public array $print = [];
     public int $headerLength = 0;
     public int $imageSize = 0;
@@ -180,7 +180,7 @@ class GraphInfo implements JsonSerialization
     /**
      * @param object{
      *     legend: string[],
-     *     print: array<int|string, string|float|int|null>, // Hint: key is 'string' after print label replacement
+     *     print: array<int|string, string|float|int|null>,
      *     imageSize: int,
      *     headerLength: int,
      *     format: string,
