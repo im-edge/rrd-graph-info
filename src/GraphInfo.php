@@ -180,7 +180,7 @@ class GraphInfo implements JsonSerialization
     /**
      * @param object{
      *     legend: string[],
-     *     print: array<int, string|float|int|null>,
+     *     print: array<int|string, string|float|int|null>, // Hint: key is 'string' after print label replacement
      *     imageSize: int,
      *     headerLength: int,
      *     format: string,
